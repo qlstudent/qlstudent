@@ -14,6 +14,7 @@ before_script:
 
 script:
   - ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json
+  - du -sh public/
 
 #after_success:
 #  - firebase deploy --token $FIREBASE_TOKEN
